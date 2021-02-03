@@ -1,3 +1,26 @@
+@font-face {
+  font-family: "GamePlayedSolid";
+  src:local("./assets/GamePlayedSolid.tff")
+}
+
+html {
+  background: rgb(34,54,110);
+  background: linear-gradient(90deg, 
+  rgba(34,54,110,1) 0%, 
+  rgba(111,211,236,1) 49%, 
+  rgba(29,51,110,1) 87%);
+}
+
+body {
+  font-family: 'GamePlayedSolid';
+  margin: auto;
+  width: 400px;
+}
+
+header {
+  margin: auto;
+}
+
 .container {
   display: flex;
 }
@@ -5,10 +28,13 @@
 .grid {
   width: 200px;
   height: 400px;
-  background-color: yellow;
+  background-color: rgb( 0,0,0, .5);
   display: flex;
   flex-wrap: wrap;
-}
+  margin: auto;
+  margin-top: 5vh;
+  border-radius: 2.5px;
+  }
 
 .grid div {
   height: 20px;
@@ -20,26 +46,30 @@
 
 .tetromino {
   background-color: blue;
-  /* border: solid 2.5px;
-  border-color: white black black white;
-  border-radius: 2.5px */
+  box-sizing: border-box;
+  border: solid 2.5px;
+  border-top-color: rgb(255, 255, 255, .2);
+  border-left-color: rgb(255, 255, 255, .2);
+  border-right-color: rgb(0, 0, 0, .2);
+  border-bottom-color: rgb(0, 0, 0, .2);
+  border-radius: 2.5px
 }
 
-/* .grid .bottom {
-  border-color: white;
-  background-color: white;
-} */
-
 .mini-grid {
-  margin-left: 50px;
+  margin: auto;
   width: 80px;
   height: 80px;
   display: flex;
   flex-wrap: wrap;
-  background-color: yellow;
+  background-color: rgb( 0,0,0, .5);
+  border-radius: 2.5px;
 }
 
 .mini-grid div {
   height: 20px;
   width: 20px;
+}
+
+button {
+  background: transparent;
 }
